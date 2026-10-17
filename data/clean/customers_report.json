@@ -1,0 +1,31 @@
+{
+  "dataset": "customers",
+  "timestamp": "2026-10-17T13:59:04.465441",
+  "initial_rows": 10,
+  "duplicates_removed": 0,
+  "final_rows": 10,
+  "valid_rows": 8,
+  "invalid_rows": 2,
+  "invalid_samples": [
+    {
+      "index": 1,
+      "error": "2 validation errors for CustomerRecord\nemail\n  value is not a valid email address: An email address must have an @-sign. [type=value_error, input_value='bad-email', input_type=str]\nage\n  Value error, Age must be 0-120 [type=value_error, input_value=-5.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+      "data": {
+        "customer_id": 2,
+        "email": "bad-email",
+        "age": -5.0,
+        "signup_date": "NaT"
+      }
+    },
+    {
+      "index": 3,
+      "error": "2 validation errors for CustomerRecord\nemail\n  value is not a valid email address: The part after the @-sign is not valid. It should have a period. [type=value_error, input_value='test@com', input_type=str]\nage\n  Value error, Age must be 0-120 [type=value_error, input_value=200.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+      "data": {
+        "customer_id": 3,
+        "email": "test@com",
+        "age": 200.0,
+        "signup_date": "NaT"
+      }
+    }
+  ]
+}

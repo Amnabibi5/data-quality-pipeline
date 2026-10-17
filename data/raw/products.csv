@@ -1,0 +1,7 @@
+product_id,product_name,price,stock_date
+101,Laptop,1000,2023-01-01
+102,,500,2023-02-15
+103,Mobile,-200,not-a-date
+103,Mobile,-200,not-a-date
+104,Tablet,,2023-05-10
+,Watch,300,2023-06-01

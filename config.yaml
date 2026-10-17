@@ -1,0 +1,19 @@
+datasets:
+  customers:
+    path: data/raw/customers.csv
+    table_name: customers
+    required_columns: [customer_id, email, age, signup_date]
+  products:
+    path: data/raw/products.xlsx
+    table_name: products
+    required_columns: [product_id, product_name, price, stock_date]
+  orders:
+    path: data/raw/orders.json
+    table_name: orders
+    required_columns: [order_id, customer_id, amount, order_date]
+
+cleaning_strategies:
+  age: median
+  price: median
+  amount: median
+  email: drop_if_invalid

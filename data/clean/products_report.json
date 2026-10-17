@@ -1,0 +1,31 @@
+{
+  "dataset": "products",
+  "timestamp": "2026-10-17T13:59:05.064914",
+  "initial_rows": 6,
+  "duplicates_removed": 1,
+  "final_rows": 5,
+  "valid_rows": 3,
+  "invalid_rows": 2,
+  "invalid_samples": [
+    {
+      "index": 2,
+      "error": "1 validation error for ProductRecord\nprice\n  Value error, Price cannot be negative [type=value_error, input_value=-200.0, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/value_error",
+      "data": {
+        "product_id": 103.0,
+        "product_name": "Mobile",
+        "price": -200.0,
+        "stock_date": "NaT"
+      }
+    },
+    {
+      "index": 5,
+      "error": "1 validation error for ProductRecord\nproduct_id\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=102.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_from_float",
+      "data": {
+        "product_id": 102.5,
+        "product_name": "Watch",
+        "price": 300.0,
+        "stock_date": "2023-01-06 00:00:00"
+      }
+    }
+  ]
+}

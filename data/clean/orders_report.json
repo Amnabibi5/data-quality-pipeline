@@ -1,0 +1,41 @@
+{
+  "dataset": "orders",
+  "timestamp": "2026-10-17T13:59:05.136366",
+  "initial_rows": 4,
+  "duplicates_removed": 1,
+  "final_rows": 3,
+  "valid_rows": 0,
+  "invalid_rows": 3,
+  "invalid_samples": [
+    {
+      "index": 0,
+      "error": "3 validation errors for CustomerRecord\nemail\n  Field required [type=missing, input_value={'order_id': 1, 'customer...('2023-01-15 00:00:00')}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nage\n  Field required [type=missing, input_value={'order_id': 1, 'customer...('2023-01-15 00:00:00')}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nsignup_date\n  Field required [type=missing, input_value={'order_id': 1, 'customer...('2023-01-15 00:00:00')}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+      "data": {
+        "order_id": 1,
+        "customer_id": 1.0,
+        "amount": 250.5,
+        "order_date": "2023-01-15 00:00:00"
+      }
+    },
+    {
+      "index": 1,
+      "error": "3 validation errors for CustomerRecord\nemail\n  Field required [type=missing, input_value={'order_id': 2, 'customer....25, 'order_date': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nage\n  Field required [type=missing, input_value={'order_id': 2, 'customer....25, 'order_date': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nsignup_date\n  Field required [type=missing, input_value={'order_id': 2, 'customer....25, 'order_date': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+      "data": {
+        "order_id": 2,
+        "customer_id": 2.0,
+        "amount": 75.25,
+        "order_date": "NaT"
+      }
+    },
+    {
+      "index": 3,
+      "error": "4 validation errors for CustomerRecord\ncustomer_id\n  Input should be a valid integer, got a number with a fractional part [type=int_from_float, input_value=1.5, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.13/v/int_from_float\nemail\n  Field required [type=missing, input_value={'order_id': 4, 'customer...0.0, 'order_date': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nage\n  Field required [type=missing, input_value={'order_id': 4, 'customer...0.0, 'order_date': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\nsignup_date\n  Field required [type=missing, input_value={'order_id': 4, 'customer...0.0, 'order_date': None}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+      "data": {
+        "order_id": 4,
+        "customer_id": 1.5,
+        "amount": -100.0,
+        "order_date": "NaT"
+      }
+    }
+  ]
+}

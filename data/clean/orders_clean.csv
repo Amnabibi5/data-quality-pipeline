@@ -1,0 +1,4 @@
+order_id,customer_id,amount,order_date
+1,1.0,250.5,2023-01-15
+2,2.0,75.25,
+4,1.5,-100.0,

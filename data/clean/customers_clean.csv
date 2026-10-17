@@ -1,0 +1,9 @@
+customer_id,email,age,signup_date
+1,a@gmail.com,25.0,2023-10-01
+2,a@gmail.com,25.0,2023-10-01
+4,john@yahoo.com,30.0,
+5,,22.0,
+6,sara@example.com,30.0,2023-01-13
+7,ali@example.com,35.0,
+8,test@example.com,40.0,2023-01-04
+9,test@example.com,40.0,2023-01-04
