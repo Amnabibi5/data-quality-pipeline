@@ -3,6 +3,12 @@ Intern: Amna Bibi - Data Engineer Intern - Datalligence - Deadline 19-10-2026
 
 ## Overview
 Reusable pipeline converting messy CSV/Excel/JSON to clean validated data → PostgreSQL + Quality Report.
+# Automated Data Ingestion & Data Quality Pipeline
+
+![Pipeline Architecture](image/pipline.jpeg)
+
+> ETL Pipeline — Automated • Scalable • Reliable • Monitorable
+
 
 ## Architecture
 CSV/Excel/JSON → Ingestion → Schema Validation → Cleaning → Transformation → Pydantic Validation → PostgreSQL → Quality Report (see diagram)
