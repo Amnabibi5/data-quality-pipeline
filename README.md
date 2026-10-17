@@ -24,4 +24,8 @@ src/
 ##  How to Run
 pip install -r requirements.txt
 python main.py
-OutputClean files: data/clean/Quality reports: data/clean/*_report.jsonLogs: logs/Built by Amna Bibi | Data Engineer Internship Project at Datalligence
+## Output
+Clean files: data/clean/
+Quality reports: data/clean/*_report.json
+Logs: logs/
+Built by Amna Bibi | Data Engineer Internship Project at Datalligence
